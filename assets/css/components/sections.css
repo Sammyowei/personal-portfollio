@@ -1,0 +1,50 @@
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background-color: var(--section-bg);
+    border-radius: 8px;
+}
+
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+}
+
+.skill-item {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-3px);
+}
+
+.fun-fact {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .skills-list {
+        justify-content: center;
+    }
+}
